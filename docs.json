@@ -9,15 +9,21 @@
     "dark": "#1B3D2A"
   },
   "fonts": {
+    "family": "Source Sans Pro",
+    "weight": 400,
+    "source": "https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2",
+    "format": "woff2",
     "heading": {
       "family": "Libre Baskerville",
-      "source": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap",
-      "weight": 700
+      "weight": 700,
+      "source": "https://fonts.gstatic.com/s/librebaskerville/v14/kmKhZrc3Hgbbcjq75U4uslyuy4kn0pNeYRI4CN2V.woff2",
+      "format": "woff2"
     },
     "body": {
-      "family": "Source Sans Pro", 
-      "source": "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap",
-      "weight": 400
+      "family": "Source Sans Pro",
+      "weight": 400,
+      "source": "https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2",
+      "format": "woff2"
     }
   },
   "styling": {
@@ -38,8 +44,7 @@
   "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
-    "href": "/"
+    "dark": "/logo/dark.svg"
   },
   "navigation": {
     "global": {
