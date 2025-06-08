@@ -1,102 +1,277 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "willow",
+  "name": "City of Oak Point",
+  "description": "Official documentation and resources for the City of Oak Point - serving our community with transparency and excellence.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2F5D3E",
+    "light": "#4A7C5C",
+    "dark": "#1B3D2A"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Libre Baskerville",
+      "source": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap",
+      "weight": 700
+    },
+    "body": {
+      "family": "Source Sans Pro", 
+      "source": "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap",
+      "weight": 400
+    }
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs",
+    "codeblocks": "system"
+  },
+  "appearance": {
+    "default": "light",
+    "strict": false
+  },
+  "background": {
+    "decoration": "grid",
+    "color": {
+      "light": "#F8FAF9",
+      "dark": "#0F1611"
+    }
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "/"
+  },
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "City Calendar",
+          "href": "https://oakpoint.gov/calendar",
+          "icon": "calendar-days",
+          "color": {
+            "light": "#2F5D3E",
+            "dark": "#4A7C5C"
+          }
+        },
+        {
+          "anchor": "Contact City Hall",
+          "href": "mailto:info@oakpoint.gov",
+          "icon": "building-columns",
+          "color": {
+            "light": "#2F5D3E", 
+            "dark": "#4A7C5C"
+          }
+        },
+        {
+          "anchor": "Emergency Services",
+          "href": "tel:911",
+          "icon": "siren-on",
+          "color": {
+            "light": "#DC2626",
+            "dark": "#EF4444"
+          }
+        }
+      ]
+    },
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "City Services",
+        "icon": "hand-holding-heart",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Essential Services",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "services/overview",
+              "services/permits-licenses",
+              "services/utilities",
+              "services/public-works"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Public Safety",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "safety/police-department",
+              "safety/fire-department", 
+              "safety/emergency-management",
+              "safety/code-enforcement"
+            ]
+          },
+          {
+            "group": "Community Resources",
+            "pages": [
+              "community/parks-recreation",
+              "community/library",
+              "community/senior-services",
+              "community/youth-programs"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Government",
+        "icon": "building-columns",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Leadership",
             "pages": [
-              "api-reference/introduction"
+              "government/mayor",
+              "government/city-council",
+              "government/city-manager",
+              "government/department-heads"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Meetings & Records",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "government/council-meetings",
+              "government/meeting-minutes",
+              "government/public-records",
+              "government/ordinances"
+            ]
+          },
+          {
+            "group": "Transparency",
+            "pages": [
+              "government/budget-finance",
+              "government/annual-reports",
+              "government/procurement",
+              "government/open-government"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Business",
+        "icon": "briefcase",
+        "groups": [
+          {
+            "group": "Starting a Business",
+            "pages": [
+              "business/business-licenses",
+              "business/zoning-planning",
+              "business/building-permits",
+              "business/tax-information"
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "business/economic-development",
+              "business/development-incentives",
+              "business/site-selection",
+              "business/development-process"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Residents",
+        "icon": "house",
+        "groups": [
+          {
+            "group": "Living in Oak Point",
+            "pages": [
+              "residents/new-residents",
+              "residents/neighborhoods",
+              "residents/schools",
+              "residents/healthcare"
+            ]
+          },
+          {
+            "group": "Civic Engagement",
+            "pages": [
+              "residents/voting-elections",
+              "residents/volunteer-opportunities",
+              "residents/boards-commissions",
+              "residents/public-participation"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "residents/trash-recycling",
+              "residents/property-information",
+              "residents/transportation",
+              "residents/forms-documents"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    ]
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Pay Bills Online",
+        "href": "https://oakpoint.gov/pay"
+      },
+      {
+        "label": "Report an Issue",
+        "href": "https://oakpoint.gov/report"
       }
     ],
     "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "type": "button", 
+      "label": "City Portal",
+      "href": "https://portal.oakpoint.gov"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "facebook": "https://facebook.com/cityofoakpoint",
+      "x": "https://x.com/oakpointcity", 
+      "youtube": "https://youtube.com/@cityofoakpoint"
+    },
+    "links": [
+      {
+        "header": "Quick Links",
+        "items": [
+          {
+            "label": "Jobs & Careers",
+            "href": "https://oakpoint.gov/jobs"
+          },
+          {
+            "label": "News & Updates",
+            "href": "https://oakpoint.gov/news"
+          },
+          {
+            "label": "Public Notices", 
+            "href": "https://oakpoint.gov/notices"
+          }
+        ]
+      },
+      {
+        "header": "Contact Info",
+        "items": [
+          {
+            "label": "City Hall: (555) 123-4567",
+            "href": "tel:5551234567"
+          },
+          {
+            "label": "100 Oak Point Plaza",
+            "href": "https://maps.google.com/?q=100+Oak+Point+Plaza"
+          },
+          {
+            "label": "Hours: Mon-Fri 8AM-5PM",
+            "href": "https://oakpoint.gov/hours"
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "indexing": "all",
+    "metatags": {
+      "og:site_name": "City of Oak Point",
+      "og:type": "website",
+      "twitter:card": "summary_large_image"
     }
+  },
+  "search": {
+    "prompt": "Search city services, departments, and information..."
+  },
+  "banner": {
+    "content": "🏛️ **New City Budget Approved** - View the [FY 2025 Budget Details](/government/budget-finance) and upcoming infrastructure projects.",
+    "dismissible": true
   }
 }
