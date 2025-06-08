@@ -43,8 +43,8 @@
   },
   "favicon": "/favicon.svg",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://www.oakpointtexas.com/ImageRepository/Document?documentID=1170",
+    "dark": "https://www.oakpointtexas.com/ImageRepository/Document?documentID=1170"
   },
   "navigation": {
     "global": {
